@@ -14,12 +14,12 @@ The content of this API is licensed for use under the [Creative Commons 4.0 Lice
 
 
 ## Contacts
-*Author:*
-**Nicholas Car**
-CSIRO Land & Water, Environmental Informatics Group
-<nicholas.car@csiro.au>
+*Author (of the profile characterisation, not RightsML):*  
+**Nicholas Car**  
+CSIRO Land & Water, Environmental Informatics Group  
+<nicholas.car@csiro.au>  
 
-*Contributor (of the original characterisation):*
-**Andrea Perego**
-European Commission, Joint Research Centre
-<andrea.perego@ec.europa.eu>
+*Contributor (of the original profile characterisation):*  
+**Andrea Perego**  
+European Commission, Joint Research Centre  
+<andrea.perego@ec.europa.eu>  
