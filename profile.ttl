@@ -1,0 +1,51 @@
+@prefix dct:  <http://purl.org/dc/terms/> .
+@prefix dc:   <http://purl.org/dc/elements/1.1/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix prof: <http://www.w3.org/ns/dx/prof/> .
+@prefix rml2: <http://iptc.org/std/RightsML/2.0/> .
+@prefix role: <http://www.w3.org/ns/dx/prof/role/> .
+@prefix ex:   <http://example.org/rightsml-example/> .
+
+<https://iptc.org/std/RightsML/odrl-profile/>
+    a prof:Profile ;
+    dct:title "RightsML" ;
+    dct:description """RightsML provides a data model for marking up rights expressions about content of all relevant media types in a machine readable way.
+
+RightsML builds on ODRL, the framework for digital rights hosted by the W3C, by extending it to meet the specific needs of the media industry.""" ;
+    prof:isProfileOf odrl: ;
+    prof:hasResource
+        ex:rml-html ,
+        ex:rml-ttl ;
+    dct:rights "IPTC, the International Press Telecommunications Council" ;
+    dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dc:creator "International Press Telecommunications Council" ;
+    dc:contributor
+        "Vincent Baby (Thomson Reuters)" ,
+        "Linda Burman (L.Burman)" ,
+        "Dave Compton (Thomson Reuters)" ,
+        "Chris Eisenberg (Getty Images)" ,
+        "Christ Hugh-Jones (Fingerpost)" ,
+        "Stuart Myles (AP)" ,
+        "Andy Read (BBC)" ,
+        "Michael Steidl (IPTC)" ;
+    owl:versionInfo "2.0.2"^^xsd:string ;    
+    dct:issued "2018-06-13"^^xsd:date ;
+.
+
+ex:rml-html
+    a prof:ResourceDescriptor ;
+    prof:hasRole role:specification ;
+    prof:hasArtifact rml2:RightsML_2.0-specification.html ;
+    dct:format <https://www.iana.org/assignments/media-types/text/html> ;
+    dct:conformsTo <https://www.w3.org/TR/html/> ;
+.
+
+ex:rml-ttl
+    a prof:ResourceDescriptor ;
+    prof:hasRole role:vocabulary ;
+    prof:hasArtifact rml2:RightsML_2.0-ontology.ttl ;
+    dct:format <https://www.iana.org/assignments/media-types/text/turtle> ;
+    dct:conformsTo <https://www.w3.org/TR/turtle/> ;
+.
